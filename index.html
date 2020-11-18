@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/logo.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/05f3c818ad.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+    <title>ROCK | PAPER | SCISSORS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="score-container">
+          <h2>SCORE</h2>
+          <div class="score">
+            <p>Player: <span class="counter" id="player-score">0</span></p>
+            <p>Computer: <span class="counter" id="computer-score">0</span></p>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="container-section" id="container-section">
+      <div class="choises">
+        <button class="btn-rounded btn-rock" id="rock">
+          <span class="wrapper" title="ROCK" id="rock">
+            <i class="fas fa-hand-rock fa-5x" id="rock"></i>
+          </span>
+        </button>
+
+        <button class="btn-rounded btn-paper" id="paper">
+          <span class="wrapper" title="PAPER" id="paper">
+            <i class="fas fa-hand-paper fa-5x" id="paper"></i>
+          </span>
+        </button>
+        <hr />
+        <button class="btn-rounded btn-scissors" id="scissors">
+          <span class="wrapper" title="SCISSORS" id="scissors">
+            <i class="fas fa-hand-scissors fa-5x" id="scissors"></i>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="winner_looser" id="winner_looser">
+      <div class="btnWL" id="playerIcon">
+        <h2><span class="stxt">PLAYER</span> PICKET</h2>
+        
+          <button class="btn-rounded1 btn-rock">
+            <span class="wrapper1">
+              <i class="fas fa-hand-rock fa-9x"></i>
+            </span>
+          </button>
+        
+      </div>
+
+      <div class="winner">
+        <h1 id="winnerText">WINNER</h1>
+        <button class="btn-reset" id="reset">TRY AGAIN</button>
+      </div>
+
+      <div class="btnWL" id="computerIcon">
+        <h2><span class="stxt">COMPUTER</span> PICKET</h2>
+        <button class="btn-rounded1 btn-scissors">
+          <span class="wrapper1">
+            <i class="fas fa-hand-scissors fa-9x"></i>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <button class="btn-rules" id="btn-rules">RULES</button>
+
+    <div class="card" id="card">
+      <div class="card-content">
+        <img src="imgs/rules.jpg" alt="game-rules" />
+        <button class="btn-close" id="btn-close">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
