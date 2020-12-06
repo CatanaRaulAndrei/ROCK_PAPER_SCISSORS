@@ -117,7 +117,7 @@ function displayWinner(winner, playerChoise, computerChoise) {
         reset.classList.remove('draw');
         reset.classList.add('loose');
         computerIcon.innerHTML = `
-        <h2><span class="stxt">PLAYER</span> PICKET</h2>
+        <h2><span class="stxt">COMPUTER</span> PICKET</h2>
         <button class="btn-rounded1 btn-${computerChoise} winner_icon" id="computerIconBtn">
           <span class="wrapper1">
             <i class="fas fa-hand-${computerChoise} fa-9x"></i>
